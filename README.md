@@ -1,6 +1,5 @@
-# Example Fastlane and Jenkins 2 Setup for iOS
 
-## Description
+# Description
 
 This is an example of using [fastlane](https://fastlane.tools) with Jenkins 2 and it's pipeline-as-code plugin.
 
@@ -8,7 +7,7 @@ The pipeline as 4 stages, each defined as it's own lane in `fastlane` and is des
 
 More information on what each stage does can be found in the `Readme.md` under the `fastlane` directory.
 
-## Usage
+# Usage
 
 Put the `fastlane` and `pipeline` folders in this repo into your project root directory. Move your `xcodeproj`, `xcworkspace` and code directories into a subdirectory called `src`. The directory strucure should look like this:
 
@@ -38,7 +37,7 @@ Set up Jenkins as per your requirements. There are a variety of guides available
 
 Follow the Jenkins 2 pipeline-as-code plugin docs and point it to the `Jenkinsfile` under the `pipelines` directory.
 
-## SwiftLint
+# SwiftLint
 
 The `lint` lane does produce a SwiftLint report but it's in plain text and not very readable. Other formats produced by SwiftLint are meant to be machine readable by tools such as Sonar which are complete rubbish and a pain to set up.
 
@@ -54,6 +53,11 @@ else
     echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
 fi
 ```
+
+## License
+
+This project is available under the MIT license. See the LICENSE.md file for more info.
+
 
 ## Feedback and Questions
 
