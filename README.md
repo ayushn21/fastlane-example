@@ -41,7 +41,7 @@ Follow the Jenkins 2 pipeline-as-code plugin docs and point it to the `Jenkinsfi
 
 The `lint` lane does produce a SwiftLint report but it's in plain text and not very readable. Other formats produced by SwiftLint are meant to be machine readable by tools such as Sonar which are complete rubbish and a pain to set up.
 
-Hence, It's better to integrate SwiftLint with Xcode so it's easier to track issues. Create a "Run Script" build phase and copy the following in:
+Hence, It's better to integrate SwiftLint with Xcode so it's easier to track issues. Create a "Run Script" build phase in your Xcode project and copy the following in:
 
 ```
 if which swiftlint >/dev/null; then
